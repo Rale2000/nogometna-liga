@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>Football League - Igrači</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-photo">
+            <img src="logo.png" alt="Logo Football League">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="clubs.html">Klubovi</a></li>
+                <li><a href="matches.html">Utakmicame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Upravljanje Igračima</h1>
+        <div class="form-container">
+            <form id="playerForm">
+                <label for="playerName">Ime:</label>
+                <input type="text" id="playerName" required>
+
+                <label for="playerSurname">Prezime:</label>
+                <input type="text" id="playerSurname" required>
+
+                <label for="playerOIB">OIB:</label>
+                <input type="text" id="playerOIB" required>
+
+                <label for="playerCountry">Država:</label>
+                <input type="text" id="playerCountry" required>
+
+                <label for="playerPosition">Pozicija:</label>
+                <select id="playerPosition" required>
+                    <option value="">Odaberi poziciju</option>
+                    <option value="0">Vratar</option>
+                    <option value="1">Branič</option>
+                    <option value="2">Veznjak</option>
+                    <option value="3">Napadač</option>
+                </select>
+
+                <label for="playerValue">Vrijednost:</label>
+                <input type="number" step="0.01" id="playerValue" required>
+
+                <label for="playerClub">Klub:</label>
+                <select id="playerClub" required>
+                    <option value="">Odaberi klub</option>
+                    <!-- Opcije će se učitati dinamički -->
+                </select>
+
+                <button type="submit">Dodaj Igrača</button>
+                <!-- Cancel button is hidden by default -->
+                <button type="button" id="cancelEdit" style="display: none;">Odustani</button>
+            </form>
+        </div>
+        <table id="playersTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Ime</th>
+                    <th>Prezime</th>
+                    <th>OIB</th>
+                    <th>Država</th>
+                    <th>Pozicija</th>
+                    <th>Vrijednost</th>
+                    <th>Klub</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Igrači će se učitati ovdje -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

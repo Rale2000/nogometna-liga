@@ -1,0 +1,145 @@
+﻿/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5dc; /* Beige */
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header & Navbar */
+header {
+    background-color: #8B4513; /* Saddle Brown */
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+.header-photo img {
+    max-height: 80px;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #A0522D; /* Sienna */
+}
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+        nav ul li {
+            margin: 0;
+        }
+
+            nav ul li a {
+                display: block;
+                padding: 10px 20px;
+                color: #fff;
+                text-decoration: none;
+            }
+
+                nav ul li a:hover {
+                    background-color: #CD853F; /* Peru */
+                }
+
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #8B4513;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #CD853F;
+    color: #fff;
+}
+
+/* Form Styles */
+.form-container {
+    max-width: 600px;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #8B4513;
+    border-radius: 5px;
+}
+
+    .form-container form label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-container form input,
+    .form-container form select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .form-container form button {
+        background-color: #8B4513;
+        color: #fff;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+        .form-container form button:hover {
+            background-color: #A0522D;
+        }
+
+/* Filter Styles for Matches */
+.filter {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .filter label {
+        margin-right: 5px;
+    }
+
+    .filter input {
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    .filter button {
+        padding: 5px 10px;
+        background-color: #8B4513;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+        .filter button:hover {
+            background-color: #A0522D;
+        }

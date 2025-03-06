@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>Nogometna liga - Utakmice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-photo">
+            <img src="logo.png" alt="Logo nogometne lige">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="clubs.html">Klubovi</a></li>
+                <li><a href="players.html">Igrači</a></li>
+                <li><a href="index.html">Utakmice</a></li>
+                <li><a href="matches.html">Upravljanje Utakmicama</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Popis Utakmica</h1>
+        <div class="filter">
+            <label for="startDate">Od:</label>
+            <input type="date" id="startDate">
+            <label for="endDate">Do:</label>
+            <input type="date" id="endDate">
+            <button id="filterButton">Filtriraj</button>
+        </div>
+        <table id="matchesTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Datum</th>
+                    <th>Domaćin</th>
+                    <th>Gost</th>
+                    <th>Bodovi Domaćin</th>
+                    <th>Bodovi Gost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Matches will be loaded here dynamically -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

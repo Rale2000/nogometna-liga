@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>Football League - Upravljanje Utakmicama</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-photo">
+            <img src="logo.png" alt="Logo Football League">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="clubs.html">Klubovi</a></li>
+                <li><a href="players.html">Igrači</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Upravljanje Utakmicama</h1>
+        <div class="form-container">
+            <form id="matchForm">
+                <label for="matchDate">Datum i Vrijeme:</label>
+                <!-- Using datetime-local for both date and time -->
+                <input type="datetime-local" id="matchDate" required>
+
+                <label for="homeTeam">Domaćin:</label>
+                <select id="homeTeam" required>
+                    <option value="">Odaberi domaćina</option>
+                    <!-- Options will be loaded dynamically -->
+                </select>
+
+                <label for="awayTeam">Gost:</label>
+                <select id="awayTeam" required>
+                    <option value="">Odaberi gosta</option>
+                    <!-- Options will be loaded dynamically -->
+                </select>
+
+                <label for="homePts">Bodovi Domaćin:</label>
+                <input type="number" id="homePts" required>
+
+                <label for="awayPts">Bodovi Gost:</label>
+                <input type="number" id="awayPts" required>
+
+                <button type="submit">Dodaj Utakmicu</button>
+                <button type="button" id="cancelMatchEdit" style="display: none;">Odustani</button>
+            </form>
+        </div>
+        <table id="matchesManageTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Datum i Vrijeme</th>
+                    <th>Domaćin</th>
+                    <th>Gost</th>
+                    <th>Bodovi Domaćin</th>
+                    <th>Bodovi Gost</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Matches will be loaded here dynamically -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

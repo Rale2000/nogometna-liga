@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="utf-8" />
+    <title>Football League - Klubovi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-photo">
+            <img src="logo.png" alt="Logo Football League">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li><a href="clubs.html">Klubovi</a></li>
+                <li><a href="players.html">Igrači</a></li>
+                <li><a href="matches.html">Utakmicame</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Upravljanje Klubovima</h1>
+        <div class="form-container">
+            <form id="clubForm">
+                <label for="clubName">Naziv Kluba:</label>
+                <input type="text" id="clubName" required>
+
+                <label for="stadium">Stadion:</label>
+                <input type="text" id="stadium" required>
+
+                <label for="established">Osnovan:</label>
+                <input type="date" id="established" required>
+
+                <button type="submit">Dodaj Klub</button>
+                <button type="button" id="cancelClubEdit" style="display: none;">Odustani</button>
+            </form>
+        </div>
+        <table id="clubsTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Naziv</th>
+                    <th>Stadion</th>
+                    <th>Osnovan</th>
+                    <th>Akcije</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Klubovi će biti učitani ovdje -->
+            </tbody>
+        </table>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
