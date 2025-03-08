@@ -16,11 +16,8 @@ namespace FootballLeague.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Player>()
-                .Property(p => p.Position)
-                .HasConversion<string>();
 
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Club>().ToTable("Klub");
         }
     }
 }
